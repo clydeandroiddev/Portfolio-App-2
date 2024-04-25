@@ -1,0 +1,159 @@
+{
+  "Error": {},
+  "Cars": [
+    {
+      "carID": 100,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Nissan Teana 2017",
+      "titleAr": "نيسان Teana 2017",
+      "AuctionInfo": {
+        "bids": 5,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 6600,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 101,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Nissan Teana 2017",
+      "titleAr": "نيسان Teana 2017",
+      "AuctionInfo": {
+        "bids": 3,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 1600,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 102,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Jeep Wrangler 2020",
+      "titleAr": "جيب رانجلر 2020",
+      "AuctionInfo": {
+        "bids": 12,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 18000,
+        "priority": 2
+      }
+    },
+    {
+      "carID": 103,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Ford F 350 2008",
+      "titleAr": "فورد اف 350 2008",
+      "AuctionInfo": {
+        "bids": 155,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 100,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 104,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Nissan Altima 2013",
+      "titleAr": "نيسان التيما 2013",
+      "AuctionInfo": {
+        "bids": 0,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 1000,
+        "priority": 1
+      }
+    },
+    {
+      "carID": 105,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Toyota Land Cruiser 2015",
+      "titleAr": "تويوتا لاند كروزر 2015",
+      "AuctionInfo": {
+        "bids": 20,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 19000,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 106,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Toyota Land Cruiser 1980",
+      "titleAr": "تويوتا لاند كروزر 1980",
+      "AuctionInfo": {
+        "bids": 7,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 200,
+        "priority": 3
+      }
+    },
+    {
+      "carID": 110,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Dodge Ram 2020",
+      "titleAr": "دودج رام 2020",
+      "AuctionInfo": {
+        "bids": 1,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 800,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 112,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Rolls Royce Wraith 2017",
+      "titleAr": "رولز رويز رايث 2017",
+      "AuctionInfo": {
+        "bids": 28,
+        "endTimeInSec": 596668,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 9000,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 113,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Generator Sakki SS60 2024",
+      "titleAr": "مولد ساكي SS60 2024",
+      "AuctionInfo": {
+        "bids": 6,
+        "endTimeInSec": 841468,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 12000,
+        "priority": 1000
+      }
+    },
+    {
+      "carID": 119,
+      "image": "https://placehold.co/150x130/png?text={carID}",
+      "titleEn": "Zoom Electric Stacker 2024",
+      "titleAr": "زووم رافعه كهربائية 2024",
+      "AuctionInfo": {
+        "bids": 5,
+        "endTimeInSec": 841468,
+        "currencyEn": "AED",
+        "currencyAr": "درهم",
+        "currentPrice": 300,
+        "priority": 1000
+      }
+    }
+  ]
+}

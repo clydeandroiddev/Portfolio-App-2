@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <data>
+        <variable
+            name="car"
+            type="com.jczm.dataloader.data.model.CarData" />
+    </data>
+    
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        app:cardUseCompatPadding="true"
+        app:cardPreventCornerOverlap="true"
+        app:cardElevation="4dp"
+        android:layoutDirection="locale">
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <ImageView
+                android:id="@+id/iv_car"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/background_placeholder"
+                app:imageSrc="@{car.image}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+               />
+            
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:id="@+id/ln_details"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_car"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:id="@+id/tv_car_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    tools:text="Toyota Land Cruiser 2013"
+                    android:textAlignment="viewStart"
+                    android:text="@{car.title}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_car_price"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:price="@{car.auctionData.currentPrice}"
+                    app:currency="@{car.auctionData.currency}"
+                    android:textAlignment="viewStart"
+                    android:layout_marginTop="8dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/purple_700"
+                    android:textStyle="bold"
+                    android:maxLines="1"
+                    android:textDirection="locale"
+                    app:layout_constraintTop_toBottomOf="@id/tv_car_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="AED 100,000"/>
+
+                <View
+                    android:id="@+id/line_sep"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/purple_500"
+                    app:layout_constraintBottom_toTopOf="@id/tv_bids"
+                    android:layout_marginBottom="8dp"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_bids"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="12sp"
+                    tools:text="5 Bids"
+                    android:textDirection="locale"
+                    android:text="@{car.auctionData.bids +` `+ `Bids`}"
+                    android:drawablePadding="2dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintEnd_toStartOf="@id/tv_end_time"
+                    app:drawableStartCompat="@drawable/ic_bids"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_end_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:textSize="12sp"
+                    android:drawablePadding="2dp"
+                    android:textAlignment="viewEnd"
+                    android:textColor="@color/purple_700"
+                    tools:text="1d 5h 3m"
+                    android:textStyle="bold"
+                    app:endTime="@{car.auctionData.endTimeInSec}"
+                    app:drawableTint="@color/purple_700"
+                    app:drawableStartCompat="@drawable/ic_time"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                     />
+
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+        
+        
+    </com.google.android.material.card.MaterialCardView>
+    
+   
+    
+</layout>
