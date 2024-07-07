@@ -1,5 +1,5 @@
 
-# Jose Claudio Miranda Data Loader
+# Data Loader
 
 **Objective**: Develop a an android application that loads a list of cars from a JSON File and store it in local database. The app should support both LTR (Left-to-Right) and RTL (Right-to-Left) locales to accommodate users from
 different language backgrounds.
